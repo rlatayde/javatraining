@@ -1,0 +1,24 @@
+2026-01-15 15:15:30.897 [INFO] com.m4.activity9.service.BankAccountService - Creating account for owner: John Doe
+2026-01-15 15:15:30.900 [INFO] com.m4.activity9.service.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 15:15:30.902 [INFO] com.m4.activity9.service.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 15:15:30.902 [INFO] com.m4.activity9.service.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 15:15:30.903 [INFO] com.m4.activity9.service.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 15:15:30.904 [INFO] com.m4.activity9.service.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 15:15:30.906 [INFO] com.m4.activity9.service.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 15:15:30.906 [WARN] com.m4.activity9.service.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 15:15:30.907 [INFO] com.m4.activity9.service.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 15:15:30.908 [WARN] com.m4.activity9.service.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 15:15:30.911 [INFO] com.m4.activity9.service.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 15:15:30.912 [WARN] com.m4.activity9.service.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 15:15:30.914 [INFO] com.m4.activity9.service.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 15:15:30.914 [WARN] com.m4.activity9.service.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 15:15:30.916 [INFO] com.m4.activity9.service.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 15:15:30.916 [WARN] com.m4.activity9.service.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 15:15:30.918 [INFO] com.m4.activity9.service.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 15:15:30.918 [WARN] com.m4.activity9.service.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 15:15:30.919 [INFO] com.m4.activity9.service.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 15:15:30.919 [WARN] com.m4.activity9.service.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 15:15:30.920 [INFO] com.m4.activity9.service.BankAccountService - Creating account for owner: 
+2026-01-15 15:15:30.920 [WARN] com.m4.activity9.service.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 15:15:30.921 [INFO] com.m4.activity9.service.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 15:15:30.921 [WARN] com.m4.activity9.service.BankAccountService - Account creation failed: invalid initial balance -1000.0
